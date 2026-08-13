@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+
+        <div class="margin"></div>
+
+        <div class="tital">
+            Temperature Converter
+        </div>
+        <div class="subtitle">
+            Convert temperature values between Celsius, Fahrenheit and Kelvin instantly.
+        </div>
+
+    </header>
+
+    <main>
+
+        <section>
+
+            <div class="converter_box">
+
+                <div class="input_group">
+                    <label for="temp_input">Enter Temperature</label>
+                    <input type="text" id="temp_input" placeholder="e.g. 25">
+                </div>
+
+                <div class="input_group">
+                    <label for="unit_select">Select Unit</label>
+                    <select id="unit_select">
+                        <option value="celsius">Celsius (°C)</option>
+                        <option value="fahrenheit">Fahrenheit (°F)</option>
+                        <option value="kelvin">Kelvin (K)</option>
+                    </select>
+                </div>
+
+                <span id="error_msg" class="error"></span>
+
+                <button id="convert_btn" class="btn">Convert</button>
+
+                <div class="result_box" id="result_box">
+
+                    <div class="result_row">
+                        <span><b>Celsius</b></span>
+                        <span id="celsius_result">--</span>
+                    </div>
+
+                    <div class="result_row">
+                        <span><b>Fahrenheit</b></span>
+                        <span id="fahrenheit_result">--</span>
+                    </div>
+
+                    <div class="result_row">
+                        <span><b>Kelvin</b></span>
+                        <span id="kelvin_result">--</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <div class="margin"></div>
+        <!-- <div class="trademark">
+            <span>Made by Manthan Patel</span>
+        </div> -->
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
